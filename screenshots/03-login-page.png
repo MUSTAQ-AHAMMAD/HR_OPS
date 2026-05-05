@@ -1,0 +1,49 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bg-gradient-login" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg-gradient-login)"/>
+
+  <!-- Card Container -->
+  <rect x="400" y="150" width="400" height="500" rx="16" fill="white"/>
+
+  <!-- Icon -->
+  <circle cx="600" cy="200" r="35" fill="#3b82f6" fill-opacity="0.1"/>
+  <text x="600" y="215" font-family="Arial, sans-serif" font-size="32" fill="#3b82f6" text-anchor="middle">🔐</text>
+
+  <!-- Title -->
+  <text x="600" y="270" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1e293b" text-anchor="middle">Welcome Back</text>
+  <text x="600" y="295" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Sign in to your account</text>
+
+  <!-- Demo Credentials Box -->
+  <rect x="440" y="315" width="320" height="60" rx="8" fill="#dbeafe"/>
+  <text x="460" y="338" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Demo Credentials:</text>
+  <text x="460" y="355" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">Email: admin@hrops.com</text>
+  <text x="460" y="370" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">Password: Admin@123</text>
+
+  <!-- Form Fields -->
+  <!-- Email -->
+  <rect x="440" y="395" width="320" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="460" y="423" font-family="Arial, sans-serif" font-size="14" fill="#64748b">✉️ Email Address</text>
+
+  <!-- Password -->
+  <rect x="440" y="455" width="320" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="460" y="483" font-family="Arial, sans-serif" font-size="14" fill="#64748b">🔒 Password</text>
+
+  <!-- Remember Me & Forgot Password -->
+  <text x="460" y="525" font-family="Arial, sans-serif" font-size="13" fill="#64748b">☑️ Remember me</text>
+  <text x="720" y="525" font-family="Arial, sans-serif" font-size="13" fill="#3b82f6" text-anchor="end">Forgot password?</text>
+
+  <!-- Button -->
+  <rect x="440" y="545" width="320" height="45" rx="8" fill="#3b82f6"/>
+  <text x="600" y="573" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Sign In</text>
+
+  <!-- Footer Link -->
+  <text x="600" y="615" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Don't have an account? <tspan fill="#3b82f6" font-weight="bold">Sign Up</tspan></text>
+</svg>

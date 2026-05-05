@@ -1,0 +1,47 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bg-gradient-register" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg-gradient-register)"/>
+
+  <!-- Card Container -->
+  <rect x="400" y="150" width="400" height="500" rx="16" fill="white"/>
+
+  <!-- Icon -->
+  <circle cx="600" cy="200" r="35" fill="#3b82f6" fill-opacity="0.1"/>
+  <text x="600" y="215" font-family="Arial, sans-serif" font-size="32" fill="#3b82f6" text-anchor="middle">🏢</text>
+
+  <!-- Title -->
+  <text x="600" y="270" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1e293b" text-anchor="middle">Create Account</text>
+  <text x="600" y="295" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Join HR Operations Platform</text>
+
+  <!-- Form Fields -->
+  <!-- Full Name -->
+  <rect x="440" y="320" width="320" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="460" y="348" font-family="Arial, sans-serif" font-size="14" fill="#64748b">👤 Full Name</text>
+
+  <!-- Email -->
+  <rect x="440" y="380" width="320" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="460" y="408" font-family="Arial, sans-serif" font-size="14" fill="#64748b">✉️ Email Address</text>
+
+  <!-- Password -->
+  <rect x="440" y="440" width="320" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="460" y="468" font-family="Arial, sans-serif" font-size="14" fill="#64748b">🔒 Password</text>
+
+  <!-- Confirm Password -->
+  <rect x="440" y="500" width="320" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="460" y="528" font-family="Arial, sans-serif" font-size="14" fill="#64748b">🔒 Confirm Password</text>
+
+  <!-- Button -->
+  <rect x="440" y="570" width="320" height="45" rx="8" fill="#3b82f6"/>
+  <text x="600" y="598" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Create Account</text>
+
+  <!-- Footer Link -->
+  <text x="600" y="635" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Already have an account? <tspan fill="#3b82f6" font-weight="bold">Sign In</tspan></text>
+</svg>

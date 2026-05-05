@@ -1,7 +1,7 @@
 # HR Operations Platform - Application Screenshots
 
 ## 1. Landing Page (Home)
-![Landing Page](./screenshots/01-landing-page.md)
+![Landing Page](./screenshots/01-landing-page.png)
 
 **Features:**
 - Modern gradient background (blue to gray)
@@ -24,7 +24,7 @@
 ---
 
 ## 2. Registration Page
-![Registration Page](./screenshots/02-register-page.md)
+![Registration Page](./screenshots/02-register-page.png)
 
 **Features:**
 - Centered card layout on gradient background
@@ -47,7 +47,7 @@
 ---
 
 ## 3. Login Page
-![Login Page](./screenshots/03-login-page.md)
+![Login Page](./screenshots/03-login-page.png)
 
 **Features:**
 - Similar layout to registration
@@ -69,7 +69,7 @@
 ---
 
 ## 4. Dashboard Page
-![Dashboard](./screenshots/04-dashboard-page.md)
+![Dashboard](./screenshots/04-dashboard-page.png)
 
 **Features:**
 
