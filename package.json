@@ -37,7 +37,7 @@
     "react-hook-form": "^7.51.4",
     "@hookform/resolvers": "^3.3.4",
     "openai": "^4.47.1",
-    "microsoft-graph-client": "^3.0.7",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
     "@azure/msal-node": "^2.8.0",
     "nanoid": "^5.0.7"
   },
