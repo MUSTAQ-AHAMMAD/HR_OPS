@@ -2,7 +2,38 @@
 
 This directory contains screenshots of the HR Operations Platform application modules.
 
-## How to Add Screenshots
+## Quick Start Options
+
+### Option 1: Automated Capture (Recommended for Developers)
+
+Use the provided script to automatically capture all screenshots:
+
+```bash
+# Install Playwright (if not already installed)
+npm install -D playwright
+
+# Make sure app is running
+npm run dev
+
+# In another terminal, seed the database
+npm run db:seed
+
+# Run the screenshot capture script
+node screenshots/capture-screenshots.js
+```
+
+The script will automatically:
+- Launch a browser
+- Navigate to each page
+- Login if needed
+- Capture screenshots
+- Save them with correct filenames
+
+### Option 2: Manual Capture (Recommended for Non-Developers)
+
+Follow the manual steps below to capture screenshots using your browser.
+
+## How to Add Screenshots Manually
 
 To help users visualize how the application works, please add screenshots following these steps:
 
