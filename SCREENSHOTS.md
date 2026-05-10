@@ -1,7 +1,9 @@
 # HR Operations Platform - Application Screenshots
 
+> **Note**: This document describes the visual design and features of each page. Actual screenshot images should be added to the `screenshots/` directory. See [screenshots/README.md](./screenshots/README.md) for instructions on how to capture and add screenshots.
+
 ## 1. Landing Page (Home)
-![Landing Page](./screenshots/01-landing-page.md)
+![Landing Page](./screenshots/01-landing-page.png)
 
 **Features:**
 - Modern gradient background (blue to gray)
@@ -24,7 +26,7 @@
 ---
 
 ## 2. Registration Page
-![Registration Page](./screenshots/02-register-page.md)
+![Registration Page](./screenshots/02-register-page.png)
 
 **Features:**
 - Centered card layout on gradient background
@@ -47,7 +49,7 @@
 ---
 
 ## 3. Login Page
-![Login Page](./screenshots/03-login-page.md)
+![Login Page](./screenshots/03-login-page.png)
 
 **Features:**
 - Similar layout to registration
@@ -69,7 +71,7 @@
 ---
 
 ## 4. Dashboard Page
-![Dashboard](./screenshots/04-dashboard-page.md)
+![Dashboard](./screenshots/04-dashboard-page.png)
 
 **Features:**
 
@@ -190,3 +192,59 @@ The HR Operations Platform features a modern, professional design with:
 - Professional color scheme and typography
 - Responsive layouts for all devices
 - Smooth animations and interactions
+
+---
+
+## 📸 Adding Screenshots
+
+**Current Status**: Screenshot image files have not yet been added to this repository.
+
+This document describes the visual design and layout of each page, but actual screenshot images need to be captured and added to demonstrate how the application looks when running.
+
+### How to Add Screenshots
+
+1. **Run the application locally**:
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+2. **Seed the database with demo data**:
+   ```bash
+   npm run db:seed
+   ```
+
+3. **Login with demo credentials**:
+   - Email: `admin@hrops.com`
+   - Password: `Admin@123`
+
+4. **Capture screenshots** of each page:
+   - Landing page at `/`
+   - Registration page at `/register`
+   - Login page at `/login`
+   - Dashboard page at `/dashboard` (after logging in)
+
+5. **Save screenshots** in the `screenshots/` directory with these names:
+   - `01-landing-page.png`
+   - `02-register-page.png`
+   - `03-login-page.png`
+   - `04-dashboard-page.png`
+
+6. **Image guidelines**:
+   - Use PNG or JPG format
+   - Recommended resolution: 1920x1080 or higher
+   - Compress images to keep file size under 500KB each
+   - Use browser in full-screen mode for consistent captures
+
+For detailed instructions, see [screenshots/README.md](./screenshots/README.md).
+
+### Why Screenshots Matter
+
+Screenshots help users and contributors:
+- **Visualize the application** before installing/running it
+- **Understand the UI/UX design** and user flows
+- **See the design system** in action
+- **Preview features** and functionality
+- **Evaluate** if the application meets their needs
+
+Once screenshots are added, they will be displayed in this document and will greatly improve the documentation quality.
