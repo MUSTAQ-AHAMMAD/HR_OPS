@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'link'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/Button'
 import { toast } from 'react-hot-toast'
