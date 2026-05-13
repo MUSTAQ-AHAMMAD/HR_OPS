@@ -6,7 +6,7 @@ import { prisma } from '@/lib/prisma'
  * GET /api/health
  * Health check endpoint to verify service status
  */
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     const checks = {
       timestamp: new Date().toISOString(),

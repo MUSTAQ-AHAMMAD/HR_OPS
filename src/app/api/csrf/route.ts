@@ -6,7 +6,7 @@ import { generateCsrfToken } from '@/lib/csrf'
  * GET /api/csrf
  * Get a CSRF token for form submissions
  */
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   const token = await generateCsrfToken()
 
   return apiResponse({
