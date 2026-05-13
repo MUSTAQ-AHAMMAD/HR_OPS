@@ -102,7 +102,7 @@ function getContrastRatio(color1: string, color2: string): number {
 
 function getLuminance(hexColor: string): number {
   const rgb = hexToRgb(hexColor)
-  const [r, g, b] = rgb.map((val) => {
+  const [r = 0, g = 0, b = 0] = rgb.map((val) => {
     val = val / 255
     return val <= 0.03928 ? val / 12.92 : Math.pow((val + 0.055) / 1.055, 2.4)
   })
