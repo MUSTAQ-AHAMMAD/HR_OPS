@@ -30,7 +30,7 @@ export function exportToExcel<T extends Record<string, unknown>>(
   data: T[],
   sheetName: string = 'Sheet1',
   filename: string = 'export.xlsx'
-): { buffer: Buffer; filename: string; mimeType: string } {
+): { content: Buffer; filename: string; mimeType: string } {
   // Create workbook
   const workbook = XLSX.utils.book_new()
 
@@ -44,7 +44,7 @@ export function exportToExcel<T extends Record<string, unknown>>(
   const buffer = XLSX.write(workbook, { type: 'buffer', bookType: 'xlsx' })
 
   return {
-    buffer: Buffer.from(buffer),
+    content: Buffer.from(buffer),
     filename,
     mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
   }
@@ -142,7 +142,10 @@ export function createDownloadResponse(
   headers.set('Content-Type', mimeType)
   headers.set('Content-Disposition', `attachment; filename="${filename}"`)
 
-  return new Response(content, {
+  // Convert Buffer to Uint8Array for Next.js Response compatibility
+  const body = typeof content === 'string' ? content : new Uint8Array(content)
+
+  return new Response(body, {
     status: 200,
     headers,
   })

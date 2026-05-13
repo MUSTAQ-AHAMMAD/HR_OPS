@@ -130,8 +130,8 @@ export async function GET(_request: NextRequest) {
         action: log.action,
         resource: log.resource,
         resourceId: log.resourceId,
-        user: log.user.name,
-        userEmail: log.user.email,
+        user: log.user?.name || 'Unknown',
+        userEmail: log.user?.email || '',
         createdAt: log.createdAt,
       })),
       topDepartments: topDepartments.map((dept) => ({

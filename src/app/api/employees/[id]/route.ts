@@ -55,10 +55,13 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
       return apiError('Invalid request body', 400)
     }
 
+    const { metadata, ...updateData } = body
+
     const employee = await prisma.employee.update({
       where: { id },
       data: {
-        ...body,
+        ...updateData,
+        ...(metadata && { metadata: metadata as any }),
         syncedAt: new Date(),
       },
     })
