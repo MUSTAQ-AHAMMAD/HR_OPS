@@ -2,7 +2,7 @@
  * Data export utilities for CSV and Excel formats
  */
 
-import * as XLSX from 'xlsx'
+import * as XLSX from '@e965/xlsx'
 import Papa from 'papaparse'
 
 export type ExportFormat = 'csv' | 'xlsx' | 'json'
