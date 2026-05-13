@@ -67,7 +67,8 @@ export function sanitizeInput(input: string): string {
  */
 export function sanitizeHtml(html: string): string {
   // Basic HTML sanitization - in production, use a library like DOMPurify
-  const allowedTags = ['p', 'br', 'strong', 'em', 'u', 'h1', 'h2', 'h3', 'ul', 'ol', 'li']
+  // Note: This is a basic implementation. For production, consider using DOMPurify
+  // Allowed tags: p, br, strong, em, u, h1, h2, h3, ul, ol, li
 
   // Remove script tags and event handlers
   let sanitized = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')

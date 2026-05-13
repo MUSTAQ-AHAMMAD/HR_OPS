@@ -100,7 +100,7 @@ export async function POST(request: NextRequest) {
         officeLocation: body.officeLocation,
         phoneNumber: body.phoneNumber,
         avatar: body.avatar,
-        metadata: body.metadata,
+        metadata: body.metadata as any,
         syncedAt: new Date(),
       },
       create: {
@@ -113,7 +113,7 @@ export async function POST(request: NextRequest) {
         officeLocation: body.officeLocation,
         phoneNumber: body.phoneNumber,
         avatar: body.avatar,
-        metadata: body.metadata,
+        metadata: body.metadata as any,
       },
     })
 
